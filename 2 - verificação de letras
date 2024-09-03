@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <conio.h>
+#include <ctype.h>
+
+int main()
+{
+    char entrada, string[22];
+    int contador = 0, contador2 = 0;
+    printf("Coloque a String: ");
+    while (contador < 20)
+    {
+        entrada = getch();
+        if (isalpha(entrada) || entrada == ' ')
+        {
+            string[contador] = entrada;
+            printf("%c", entrada);
+            contador++;
+        }
+        else if (entrada == '\b' && contador > 0)
+        {
+            printf("\b \b");
+            contador--;
+        }
+        else if (entrada == '\r')
+        {
+            break;
+        }
+    }
+    string[contador] = '\0';
+    contador = 0;
+    while (string[contador] != '\0')
+    {
+        if (string[contador] == 'a' || string[contador] == 'A')
+        {
+            contador++;
+            contador2++;
+        }
+        else
+        {
+            contador++;
+        }
+    }
+    if (contador2 == 0)
+    {
+        printf("\nNao ha letras A na string");
+    }
+    else
+    {
+        printf("\nExistem %d letra 'A' na string", contador2);
+    }
+    return 0;
+}
