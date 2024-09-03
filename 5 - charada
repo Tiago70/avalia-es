@@ -1,0 +1,7 @@
+//ligo a luz de uma das salas, se eu der a sorte de encontrar a sala com a luz ligada eu volto, ligo outra luz e verifico outra sala
+//se a luz da sala que eu verificar estiver ligada ele só pode pertencer ao interruptor que liguei, caso esteja desligada 
+//ele só pode pertencer ao interruptor que não mexi
+
+//se eu ligar um interruptor e encontrar uma sala com a luz desligada, eu sei que o primeiro interruptor não pertence a primeira porta, depois eu volto 
+//desligo a luz que liguei e ligo outra, depois vou em outra porta e verifico, se a luz estiver desligada, ela so pode pertencer ao interruptor que liguei
+//antes, caso esteja ligada, ela pertence ao interruptor que liguei
